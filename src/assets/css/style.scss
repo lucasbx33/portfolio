@@ -283,8 +283,8 @@ header.active {
   }
   
   .footer-button-project a {
-  background-color: blue;
-  color: #fff;
+  background-color: white;
+  color: black;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -292,7 +292,8 @@ header.active {
   }
   
   .footer-button-project a:hover {
-  background-color: red;
+    color: white;
+    background-color: grey;
   }
   
   footer {
