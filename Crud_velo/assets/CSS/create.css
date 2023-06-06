@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    height: 79px;
+    padding: 10px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 100px;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+main {
+    min-height: 100vh;
+    max-height: auto;
+    background-color: #F9FF9B;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 3vh;
+    margin-bottom: 3vh;
+    color: #4E4E4E;
+}
+
+section {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 100vh;
+    max-height: auto;
+    background-color: #FFFFFF;
+    padding-top: 3vh;
+}
+
+.backgroundvelo {
+    height: 75vh;
+    width: auto;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-container {
+    flex: 1;
+    padding-right: 2em;
+    margin-right: 2em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    text-align: right;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 7px;
+    opacity: 1;
+    padding: 0.5em;
+}
+
+.form-group .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.form-group label.checkbox-label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.but {
+    width: 100%;
+    max-width: 308px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    opacity: 1;
+    margin-top: 1em;
+}
+
+.but:hover {
+    background-color: #EAEAEA;
+    cursor: pointer;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+    padding-left: 2em;
+}
+
+a {
+    width: 4.5em;
+    display: block;
+    color: #707070;
+    padding: 0.5em 0.5em;
+    border: 1px solid #707070;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #EAEAEA;
+}

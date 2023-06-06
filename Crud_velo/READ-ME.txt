@@ -1,0 +1,4 @@
+sql/php:
+
+rendez vous dans phpmyadmin, créez une base de donnée appelé "velo", copiez le contenu du fichier "ads.sql" présent dans le dossier sql puis y coller le code fournis.
+une table permettant le fonctionnement du site va se créer

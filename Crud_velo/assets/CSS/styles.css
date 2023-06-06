@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto",sans-serif;
+}
+
+header{
+    height: 79px;
+    padding: 10px;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 100px;
+    min-height: 100%;
+    max-height: 100%;
+}
+/* main ---------------------------------------------------------------------------------------------------*/
+
+
+main{
+    min-height: 100vh;
+    max-height: auto;
+   
+    background-color: #F9FF9B;
+}
+
+
+h1{
+    width: 100%;
+    text-align: center;
+    padding-top: 3vh;
+    margin-bottom: 3vh;
+    color: #4E4E4E;
+    
+}
+
+
+section{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 100vh;
+    max-height: auto;
+    background-color: #FFFFFF;
+
+    padding-top: 3vh;
+}
+
+
+.ajouter{
+    display: block;
+    width: 130px;
+    height: 50px;
+    font-size: 150%;
+    border-radius: 10px;
+    border: none;
+    background-color: #29FF39;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.ajouter:hover{
+    background-color: hsl(124, 69%, 43%);
+    cursor: pointer;
+}
+
+.parentArticles{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-content: center;
+    justify-items: center;
+}
+
+
+article{
+    border: 1px solid #707070;
+    margin-bottom: 8%;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: 400px;
+    border-radius: 50px;
+}
+
+
+.imageArticle{
+    border-bottom: 1px #707070 solid;
+    height: 65%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-bottom: 12%;
+    overflow: hidden;
+    position: relative;
+    
+  
+}
+.imageArticle>img{
+    display: block;
+    height: 180%;
+    width: 106%;
+    position: relative;
+    bottom: 39%;
+    right: 3%;
+   
+}
+
+.imageArticle:hover .voir>img{
+    opacity: 0.41;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.voir>img{
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    width: 30%;
+    z-index: 2;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0;
+}
+
+.imageArticle:hover .voile{
+    opacity:1;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.voile{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #12121284;
+    z-index: 1;
+    opacity: 0;
+}
+
+
+
+h3{
+    color: #707070;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+
+.boutonArticles{
+    border: none;
+    background-color: white;
+    color: #4E4E4E;
+    font-weight: bold;
+    line-height: 15%;
+    font-size: 100%;
+}
+
+.boutonArticles:hover{
+    color: #a3a3a3;
+    cursor: pointer;
+}
+
+
+
+.parentBoutonsArticles{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media (min-width: 0px) and (max-width:400px){
+    .parentArticles{
+        display: block;
+    }
+    .article{
+        min-width: 200px;
+        height: 300px;
+        background-color: white;
+    }
+    body{
+        min-width: 300px;
+    }
+    section{
+        background-color: #F9FF9B;
+    }
+    main{
+        min-width: 300px;
+    }
+}
+
+
+@media (min-width: 400px) and (max-width:700px) {
+    .parentArticles{
+        display: block;
+    
+    }
+    section{
+        background-color: #F9FF9B;
+    }
+    .article{
+        height: 400px;
+        background-color: white;
+    }
+ 
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+    .parentArticles{
+        grid-template-columns: repeat(2, 45%);
+    }
+    h3{
+        font-size: 20pt;
+    }
+    h1{
+        font-size: 30pt;
+    }
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1800px){
+    .parentArticles{
+        grid-template-columns: repeat(3, 33%);
+    }
+    .article{
+        height: 500px;
+    }
+    h3{
+        font-size: 20pt;
+    }
+    h1{
+        font-size: 30pt;
+    }
+ 
+}
+
+@media (min-width: 1800px) and (max-width: 2000px){
+    .article{
+        height: 650px;
+    }
+    h3{
+        font-size: 20pt;
+    }
+    h1{
+        font-size: 30pt;
+    }
+    .ajouter{
+       
+        width: 150px;
+        height: 80px;
+        font-size: 170%;
+    }
+}
+
+@media (min-width: 2000px){
+    .article{
+        height: 800px;
+        max-width: 800px;
+    }
+    .boutonArticles{
+        line-height: 100%;
+        font-size: 200%;
+    }
+    h3{
+        font-size: 25pt;
+    }
+    h1{
+        font-size: 35pt;
+    }
+    .ajouter{
+       
+        width: 170px;
+        height: 100px;
+        font-size: 200%;
+    }
+}
+
+
+/* footer ---------------------------------------------------*/
+
+footer{
+    width: 100%;
+    border: 1px solid black;
+}
+
+footer>p{
+    color: #707070;
+    padding: 35px;
+}
